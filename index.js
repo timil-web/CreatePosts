@@ -17,26 +17,7 @@ app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "public")));
 
 let posts = [
-	{
-		id: uuidv4(),
-		username: "timil",
-		content: "i m from iiit"
-	},
-	{
-		id: uuidv4(),
-		username: "developer_dude",
-		content: "build projects, not just resumes"
-	},
-	{
-		id: uuidv4(),
-		username: "tech_boy",
-		content: "debugging is like being the detective in a crime movie"
-	},
-	{
-		id: uuidv4(),
-		username: "anonymous",
-		content: "consistency beats motivation every time"
-	}
+	
 ];
 
 
