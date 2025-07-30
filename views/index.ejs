@@ -106,8 +106,7 @@ a[href*="/posts/new"] {
 
 a[href*="/posts/new"]:hover {
   background-color: #1e88e5;
-}
-
+}		
 	</style>
 </head>
 <body>
@@ -117,11 +116,11 @@ a[href*="/posts/new"]:hover {
 			<h3 class="user">@<%= post.username %></h3>
 			<h4 class="content"><%= post.content %></h4>
 			<br>
-			<a href="http://localhost:3000/posts/<%= post.id %>">
+			<a href="/posts/<%= post.id %>">
 				See in detail
 			</a>
 			&nbsp;
-			<a href="http://localhost:3000/posts/<%= post.id %>/edit">
+			<a href="/posts/<%= post.id %>/edit">
 				edit
 			</a>
 			&nbsp;
@@ -132,6 +131,6 @@ a[href*="/posts/new"]:hover {
 	<% } %>
 
 	<br><br>
-	<a href="http://localhost:3000/posts/new">Create New Post</a>
+	<a href="/posts/new">Create New Post</a>
 </body>
 </html>
