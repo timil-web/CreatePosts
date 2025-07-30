@@ -1,0 +1,96 @@
+<!-- views/home.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home | Post App</title>
+  <style>
+	* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	}
+
+	body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: #f9f9f9;
+	color: #333;
+	line-height: 1.6;
+	padding: 40px;
+	}
+
+	/* Header */
+	header {
+	background-color: #222;
+	color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	text-align: center;
+	margin-bottom: 30px;
+	}
+
+	header h1 {
+	margin-bottom: 10px;
+	font-size: 2.2rem;
+	}
+
+	nav a {
+	margin: 0 10px;
+	color: #00bcd4;
+	text-decoration: none;
+	font-weight: 600;
+	transition: color 0.3s;
+	}
+
+	nav a:hover {
+	color: #fff;
+	}
+
+	/* Main Content */
+	main {
+	background-color: #e3f2fd; /* Light blue */
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	}
+
+	main p {
+	text-align: center;
+	font-size: 1.1rem;
+	margin-bottom: 15px;
+	}
+
+
+	/* Buttons (used in posts.ejs and others if needed) */
+	button, .btn {
+	padding: 10px 20px;
+	border: none;
+	background-color: #00bcd4;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+	text-decoration: none;
+	}
+
+	button:hover, .btn:hover {
+	background-color: #0097a7;
+	}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Post App</h1>
+    <nav>
+      <a href="/posts">View All Posts</a> |
+      <a href="/posts/new">Create New Post</a>
+    </nav>
+  </header>
+
+  <main>
+    <p>This is a simple micro-blogging platform where users can add and manage posts.</p>
+    <p>Click the links above to get started!</p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Post in detail</title>
+	<style>
+/* Detail Page Heading */
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Post ID */
+p {
+  text-align: center;
+  color: #777;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Post Card */
+.post {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  border-left: 6px solid #42a5f5;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Username */
+.user {
+  font-size: 1.3rem;
+  color: #1e88e5;
+  margin-bottom: 15px;
+}
+
+/* Post Content */
+.content {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Back Button */
+.back-btn {
+  display: block;
+  text-align: center;
+  margin: 30px auto 0 auto;
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: #42a5f5;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #1e88e5;
+}
+
+
+	</style>
+</head>
+<body>
+	<h2>here is your post in detail</h2>
+	<p>post id: <%= post.id %></p>
+	<div class="post">
+		<h3 class="user">@<%= post.username %></h3>
+		<h4 class="content"><%= post.content %></h4>
+	</div>
+	<a href="/posts" class="back-btn">← Back to All Posts</a>
+</body>
+</html>
